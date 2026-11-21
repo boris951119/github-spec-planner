@@ -5,7 +5,7 @@ display_name: GitHub 开源调研项目规划
 display_name_en: GitHub Spec Planner
 description_zh: 项目开工前自动调研 GitHub 近半年 star 前 5 的同类开源项目，产出可溯源、可验证、可复用的 spec.md、plan.md 与多维度交付测试集。
 description_en: Researches top-starred GitHub projects from the last six months and produces source-traceable spec, plan and multi-dimensional delivery test suite.
-version: 1.0.0
+version: 1.1.0
 author: WorkBuddy User
 examples_zh:
   - 帮我规划一个任务管理应用，先调研同类开源项目再写 spec

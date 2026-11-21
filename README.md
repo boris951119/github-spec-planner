@@ -1,6 +1,6 @@
 # GitHub Spec Planner
 
-[![Skill Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](SKILL.md)
+[![Skill Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](SKILL.md)
 [![Python](https://img.shields.io/badge/python-3.10%2B-green.svg)](scripts/)
 
 **项目开工前，先让证据说话。**
@@ -200,6 +200,21 @@ python3 scripts/validate_docs.py --docs-dir docs --check-links
 - 关键词相关性是词面匹配，不是语义判断；高 star 弱相关的项目只作背景参考
 - GitHub API 未登录时限流较紧，大批量关键词调研建议配置 token
 - 适用于产品/项目立项阶段；不适合单点 bug 修复或已有代码库的重构规划
+
+---
+
+## 变更记录
+
+### 1.1.0
+
+- 技能标识由 `evidence-driven-project-planner` 更名为 `github-spec-planner`
+- 展示名调整为「GitHub 开源调研项目规划 / GitHub Spec Planner」
+- 新增本 README，补齐安装、使用、产物结构与独立运行说明
+- 发布至 GitHub 公开仓库，配置 topics 便于检索
+
+### 1.0.0
+
+- 初始版本：GitHub 近半年 Top 5 调研、spec / plan / 测试集生成、溯源一致性校验
 
 ---
 
