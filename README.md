@@ -231,10 +231,10 @@ python3 scripts/validate_docs.py --docs-dir docs --check-links
 
 ### 1.1.0
 
-- 技能标识由 `evidence-driven-project-planner` 更名为 `github-spec-planner`
 - 展示名调整为「GitHub 开源调研项目规划 / GitHub Spec Planner」
 - 新增本 README，补齐安装、使用、产物结构与独立运行说明
-- 发布至 GitHub 公开仓库，配置 topics 便于检索
+- 发布至 GitHub 公开仓库（github-spec-planner），配置 topics 便于检索
+- 技能标识 `name` 始终为 `evidence-driven-project-planner`，作为资产唯一标识保持不变
 
 ### 1.0.0
 

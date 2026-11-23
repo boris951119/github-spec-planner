@@ -1,5 +1,5 @@
 ---
-name: github-spec-planner
+name: evidence-driven-project-planner
 description: This skill should be used before starting a new software project, or when a user asks for a spec, an execution plan with justified tech-stack choices, a competitive open-source scan, or a delivery test suite. It researches the top 5 starred GitHub projects created within the last six months that match the idea, derives a source-traceable spec.md, splits it into modules, writes plan.md with technology decision records, and generates a multi-dimensional test suite. Every claim must be backed by a cited, verifiable, reusable source.
 display_name: GitHub 开源调研项目规划
 display_name_en: GitHub Spec Planner
