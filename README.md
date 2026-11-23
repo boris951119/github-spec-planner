@@ -1,6 +1,6 @@
 # GitHub Spec Planner
 
-[![Skill Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](SKILL.md)
+[![Skill Version](https://img.shields.io/badge/version-1.2.0-blue.svg)](SKILL.md)
 [![Python](https://img.shields.io/badge/python-3.10%2B-green.svg)](scripts/)
 
 **项目开工前，先让证据说话。**
@@ -88,7 +88,25 @@ unzip github-spec-planner.zip -d ~/.workbuddy/skills/
 
 ## 使用
 
-在 WorkBuddy 对话里直接描述需求即可触发：
+### 想法还模糊？用填空模板
+
+把下面这段复制进对话，填空即可。填不出来的留空或写「不知道」，技能会按假设继续，不会反复追问——你填得越具体，产出的 spec 越贴近真实需求。
+
+```
+我要做一个【一句话描述，模糊也行】
+给谁用：【目标用户，如「独立开发者」「小团队运营」】
+它要解决什么问题：【现在的痛点或低效之处】
+核心功能：【2-3 个最重要的能力】
+一个典型场景：【谁在什么情况下用它做什么】
+我明确不想要的：【排除项，可留空】
+已确定的约束：【技术/平台/时间/预算，可留空】
+```
+
+技能会把你填的内容作为第一手依据（记为 `OBS-USR-xxx`），与 GitHub 调研证据一起写进 spec，所以这些答案会直接影响最终的需求和板块划分。
+
+### 已经想清楚了？
+
+直接描述需求即可触发：
 
 - `帮我规划一个任务管理应用，先调研同类开源项目再写 spec`
 - `根据这个需求生成项目板块划分和执行计划`
@@ -204,6 +222,12 @@ python3 scripts/validate_docs.py --docs-dir docs --check-links
 ---
 
 ## 变更记录
+
+### 1.2.0
+
+- 新增填空式提示词模板：想法模糊时按模板填写即可，留空字段按假设继续
+- 用户填写的约束与排除项记为 `OBS-USR-xxx`，作为 spec 的第一手来源
+- 模板示例同步到技能市场的「试试这样用」展示位
 
 ### 1.1.0
 

@@ -5,13 +5,15 @@ display_name: GitHub 开源调研项目规划
 display_name_en: GitHub Spec Planner
 description_zh: 项目开工前自动调研 GitHub 近半年 star 前 5 的同类开源项目，产出可溯源、可验证、可复用的 spec.md、plan.md 与多维度交付测试集。
 description_en: Researches top-starred GitHub projects from the last six months and produces source-traceable spec, plan and multi-dimensional delivery test suite.
-version: 1.1.0
+version: 1.2.0
 author: WorkBuddy User
 examples_zh:
+  - 我要做一个【一句话描述】；给谁用：【】；解决什么问题：【】；核心功能：【2-3个】；典型场景：【】；不想要的：【可留空】；已定约束：【可留空】
   - 帮我规划一个任务管理应用，先调研同类开源项目再写 spec
   - 根据这个需求生成项目板块划分和执行计划
   - 为我的项目生成带来源依据的多维度测试集
 examples_en:
+  - I want to build [one-line idea]; for [target users]; to solve [pain point]; core features [2-3]; a typical scenario []; exclusions [optional]; fixed constraints [optional]
   - Plan a task manager with GitHub open-source research first
   - Generate module breakdown and execution plan for this requirement
   - Create a source-traceable multi-dimensional test suite
@@ -29,6 +31,24 @@ Turn a one-line project idea into a complete, auditable planning package: GitHub
 Trigger on requests such as: "before building this, find similar open-source projects and write the spec", "帮我做项目规划 / 写 spec.md / 写 plan.md / 生成测试集", "调研半年内 star 最高的同类项目", "确定技术栈并说明依据". Also use when a user supplies a rough idea and expects a ready-to-execute planning package rather than code.
 
 Do not use for isolated bug fixes, code reviews, or purely conversational questions about an existing project.
+
+## Input Template — 把模糊想法变清晰
+
+When the user's request is a single vague sentence and lacks target users, core features, or a concrete scenario, present the fill-in template below and wait for it to be completed before entering Stage 0. Do not start research on an under-specified idea.
+
+```
+我要做一个【一句话描述，模糊也行】
+给谁用：【目标用户，如「独立开发者」「小团队运营」】
+它要解决什么问题：【现在的痛点或低效之处】
+核心功能：【2-3 个最重要的能力】
+一个典型场景：【谁在什么情况下用它做什么】
+我明确不想要的：【排除项，可留空】
+已确定的约束：【技术/平台/时间/预算，可留空】
+```
+
+**模板是引导，不是门槛**：填不出来的字段允许留空或写「不知道」，按 `[假设]` 登记后继续，不反复追问。用户若直接给出完整描述，不必强制套用，直接进入 Stage 0。
+
+模板的每个答案都是后续 spec 的第一手输入：用户填写的约束与排除项记为 `OBS-USR-xxx`，作为需求的来源之一，与 GitHub 调研证据并列。
 
 ## Non-Negotiable Rules
 
