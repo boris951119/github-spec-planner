@@ -11,12 +11,10 @@ examples_zh:
   - 我要做一个【一句话描述】；给谁用：【】；解决什么问题：【】；核心功能：【2-3个】；典型场景：【】；不想要的：【可留空】；已定约束：【可留空】
   - 帮我规划一个任务管理应用，先调研同类开源项目再写 spec
   - 根据这个需求生成项目板块划分和执行计划
-  - 为我的项目生成带来源依据的多维度测试集
 examples_en:
   - I want to build [one-line idea]; for [target users]; to solve [pain point]; core features [2-3]; a typical scenario []; exclusions [optional]; fixed constraints [optional]
   - Plan a task manager with GitHub open-source research first
   - Generate module breakdown and execution plan for this requirement
-  - Create a source-traceable multi-dimensional test suite
 agent_created: true
 ---
 
